@@ -1,4 +1,4 @@
-console.log(html`<b>${process.argv.slice(2)} says</b>: "${process.argv.slice(3)}"`);
+console.log(html`<b>${process.argv[2]} says</b>: "${process.argv[3]}"`);
 
     function html(strings, ...values) {
         const escHtml = (str) =>
@@ -11,15 +11,15 @@ console.log(html`<b>${process.argv.slice(2)} says</b>: "${process.argv.slice(3)}
                
             let result = "";
 
-               for(let u = 0; u < strings.lenght; u++)
+               for(let u = 0; u < strings.length; u++)
                 {
                     result += strings[u];
 
                    if(u < values.length)
                     {
-                        result += escHtml(String(values[x]));
+                        result += escHtml(String(values[u]));
                     }
                }
          return result; 
-    }
+    };
     
