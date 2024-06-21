@@ -18,3 +18,6 @@
 ### 2- Ensure no errors ( in flow, grammar, etc.)
 ### 3- Ensure there are code samples
 ### 4- Publish your article to hasnode
+
+## contributor
+Itunu
